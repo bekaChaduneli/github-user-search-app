@@ -1,0 +1,433 @@
+:root {
+    --body-color: #f6f8ff;
+    --content: #fefefe;
+    --text: #4b6a9b;
+    --placeholder: #4b6a9b;
+    --black-text: #2b3442;
+    --logo-background: #222731;
+    --shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --remove-shadow: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --not-available: 50%;
+    --search: #ffffff;
+    --search-btn: #0079ff;
+    --btn-hover: #60abff;
+    --date:#697C9A;
+    --user-background:#F6F8FF;
+    --logos:"";
+  }
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color:var(--body-color);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    display: flex;
+    width: 86%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 31px;
+    height: 38px;
+}
+
+.logo {
+    font-size:26px;
+    font-weight: 700;
+    color:var(--logo-background);
+}
+
+.second-box {
+    display: flex;
+    gap: 16px;
+    height: 38px;
+    align-items: center;
+    margin-top: 8px;
+    border: none;
+    background: none;
+    
+}
+
+.dark{
+    font-size:13px;
+    font-weight:700;
+    color:var(--text);
+}
+
+.light {
+    font-size:13px;
+    font-weight:700;
+    color:var(--search);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 86%;
+    height: 60px;
+    background-color: var(--content);
+    margin-top:35px;
+    gap: 7px;
+    border-radius:15px;
+    box-shadow: var(--shadow);
+}
+.search-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding:16px;
+}
+
+.search-text {
+    display: flex;
+    gap:11.3px;
+    width: 70%;
+    align-items: center;
+}
+
+.search-logo {
+    width: 17.6px;
+    height:17.6px;
+}
+
+.search-input {
+    height:25px;
+    border: none;
+    font-size:13px;
+    width: 100%;
+    color:var(--text);
+    font-family: 'Space Mono', monospace;
+    outline:none;
+    background-color: var(--content)
+}
+
+.search-input::placeholder {
+    color:var(--placeholder);
+    font-family: 'Space Mono', monospace;
+}
+
+.search-click {
+    border: none;
+    margin-right:-10px;
+    width:84px;
+    height:46px;
+    background-color:var(--search-btn);
+    color: var(--search);
+    font-weight:700;
+    font-family: 'Space Mono', monospace;
+    border-radius:10px;
+}
+
+.content-conteiner {
+    width: 86%;
+    height:517px;
+    background-color:var(--content);
+    margin-top:16px;
+    border-radius:15px;
+    padding:24px;
+    box-shadow: var(--shadow)
+}
+
+.user-box {
+    width: 463px;
+    height:70px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:19px;
+    justify-self: center;
+    margin-top:6px;
+    margin-bottom:33px;
+}
+
+.user-image {
+    width: 70px;
+    height:70px;
+    border-radius:50%;
+    border: none;
+    outline: none;
+}
+
+.user-text-box {
+    width:144px;
+    display:flex;
+    flex-direction:column;
+}
+
+.user-text-headline {
+    font-size:16px;
+    line-height:23.7px;
+    font-weight:700;
+    color:var(--black-text);
+    width:300px;
+}
+
+.user-text-hashtag {
+    font-size:13px;
+    line-height:19.25px;
+    font-weight:400;
+    color:var(--search-btn);
+    margin-bottom:6px;
+}
+
+.user-text-date {
+    font-size:13px;
+    line-height:19.25px;
+    color: var(--date);
+}
+
+.content-conteiner-text {
+    font-size:12px;
+    line-height:25px;
+    color:var(--text);
+}
+
+.user-information-box {
+    margin-top:23px;
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    justify-content: space-between;
+    height:85px;
+    background-color:var(--user-background);
+    border-radius:10px;
+    padding-top:16px;
+    padding-left:28px;
+    padding-right:28px;
+
+}
+
+.repository,.followers,.following {
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    gap:8px;
+}
+
+.repository-text, .followers-text,.following-text {
+    font-size:11px;
+    color:var(--text);
+}
+
+.repository-numbers,.followers-numbers ,.following-numbers {
+    font-size:16px;
+    font-weight:700;
+    color:var(--black-text);
+}
+
+.last-box {
+    width:100%;
+    display:grid;
+    flex-direction:column;
+    gap:17px;
+    margin-top:24px;
+}
+
+.location,.github,.company,.twitter {
+    display: flex;
+    gap:19.25px;
+}
+
+.location-text,.github-text,.company-text,.twitter-txt {
+    color:var(--text);
+    font-size: 13px;
+    line-height:19.25px;
+    text-decoration: none;
+}
+
+.not-availible {
+    opacity: var(--not-available);
+}
+
+.search-click:hover {
+    background-color:var(--btn-hover);
+    transition:0.3s;
+}
+
+.second-box:hover .dark{
+    color: #222731;
+}
+
+.second-box:hover .moon{
+    filter: invert(9%) sepia(23%) saturate(752%) hue-rotate(181deg) brightness(8%) contrast(86%);
+}
+
+.second-box:hover .sun {
+    filter: invert(74%) sepia(4%) saturate(3681%) hue-rotate(189deg) brightness(190%) contrast(83%);
+}
+
+.second-box:hover .light {
+    color:#90A4D4;
+}
+
+.location-logo, .github-logo, .twitter-logo, .company-logo {
+    filter: var(--logos);
+}
+
+.location-text:hover,.github-text:hover,.twitter-txt:hover,.company-text:hover {
+    text-decoration: underline;
+}
+
+.gap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+
+@media screen and (min-width:573px) {
+    body {
+        margin-top: 100px;
+    }
+    header {
+        width:573px;
+    }
+
+    .search {
+        width:573px;
+        height:69px;
+    }
+    .search-input::placeholder {
+        font-size:18px;
+    }
+    .search-input {
+        font-size:18px;
+        width:100%;
+    }
+    .search-content {
+        padding-left:32px;
+    }
+    .search-logo {
+        width:22px;
+        height:22px;
+    }
+    .search-click {
+        width:106px;
+        height:50px;
+        font-size:16px;
+    }
+    .search-text {
+        width:410px;
+    }
+    .content-conteiner {
+        width:573px;
+        height:481px;
+        padding: 40px;
+    }
+    .last-box {
+        grid-template-columns: auto auto;
+    }
+    .user-image {
+        width: 117px;
+        height: 117px;
+    }
+    .user-box {
+        height: 117px;
+        gap: 41px;
+        margin-bottom: 24px;
+        border: none;
+        outline: none;
+    }
+    .user-text-box {
+        width: 180px;
+    }
+    .user-text-headline {
+        font-size:26px;
+        line-height:38.5px;
+    }
+    .user-text-hashtag {
+        font-size:16px;
+        line-height: 23.7px;
+    }
+    .user-text-date {
+        font-size:15px;
+        line-height:22.22px;
+    }
+    .content-conteiner-text {
+        font-size:15px;
+    }
+    .user-information-box {
+        margin-top: 32px;
+    }
+    .repository,.followers,.following {
+        text-align:start;
+        gap: 1px;
+    }
+    .repository-text, .followers-text,.following-text {
+        font-size:13px;
+    }
+    .repository-numbers,.followers-numbers ,.following-numbers {
+        font-size:22px;
+    }
+    .location-text,.github-text,.company-text,.twitter-text {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:730px) {
+    header {
+        width:730px;
+    }
+    .search {
+        width:730px;
+    }
+    .search-text {
+        width:580px;
+    }
+    .user-text-box {
+        margin-top: -20px;
+    }
+    .content-conteiner {
+        width:730px;
+        height:444px;
+        padding: 48px;
+    }
+    .user-image {
+        width: 117px;
+        height: 117px;
+    }
+    .user-box {
+        height: 117px;
+        gap: 41px;
+        margin-bottom: 24px;
+    }
+
+    .user-text-date {
+        transform:translate(305px,-60px);
+    }
+    .content-conteiner-text-box {
+        width:480px;
+        transform: translate(158px,-70px);
+    }
+    .content-conteiner-text {
+        font-size:15px;
+    }
+    .user-information-box {
+        margin-top: -10px;
+        width:480px;
+        margin-left: 160px;
+    }
+    .last-box {
+        margin-left: 160px;
+        width: 469px;
+    }
+    body {
+        margin-top: 100px;
+    }
+}

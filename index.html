@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>github-user-seach-app</title>
+</head>
+<body>
+        <header>
+            <h1 class = "logo">devfinder</h1>
+            <button class = "second-box">
+                <span>
+                    <h1 class = "dark">DARK</h1>
+                    <h1 class = "light hidden">LIGHT</h1>
+                </span>
+                <span>
+                    <img src="assets/icon-moon.svg" class="moon" alt = "moon">
+                    <img src="assets/icon-sun.svg" class="sun hidden" alt="sun">
+                </span>
+            </button>
+        </header>
+        <div class = "search">
+            <div class = "search-content">
+                <div class="search-text">
+                    <img src="assets/icon-search.svg" class="search-logo">
+                    <input class = "search-input" type="text" placeholder="Search Github username...">
+                </div>
+                <button class="search-click">Search</button>
+            </div>
+        </div>
+        <div class = "content-conteiner">
+            <div class = "user-box">
+                <img class = "user-image" src="https://octodex.github.com/images/original.png">
+                <div class="user-text-box">
+                    <span class="user-text-headline">The Octocat</span>
+                    <span class="user-text-hashtag">@octocat</span>
+                    <span class="user-text-date">Joined 25 Jan 2011</span>
+    
+                </div>
+            </div>
+            <div class="content-conteiner-text-box">
+                <span class="content-conteiner-text">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+            </div>
+            <div class="user-information-box">
+                <span class="repository">
+                    <span class="repository-text">Repos</span>
+                    <span class="repository-numbers">8</span>
+                </span>
+                <span class="followers">
+                    <span class="followers-text">Followers</span>
+                    <span class="followers-numbers">3938</span>
+                </span>
+                <span class="following">
+                    <span class="following-text">Following</span>
+                    <span class="following-numbers">9</span>
+                </span>
+            </div>
+            <div class ="last-box">
+                <span class = "gap">
+                    <span class="location"><img src="assets/icon-location.svg" class="location-logo"><a href="" class="location-text">San Francisco</a></span>
+                    <span class="github"><img src="assets/icon-website.svg" class="github-logo"><a href="" class="github-text">https://github.blog</a></span>
+                </span>
+                <span class = "gap">
+                    <span class="twitter not-availible"><img src="assets/icon-twitter.svg" class="twitter-logo"><a href="" class="twitter-txt">Not Available</a></span>
+                <span class="company"><img src="assets/icon-company.svg" class="company-logo"><a href="" class="company-text">@github</a></span>
+                </span>
+            </div>
+        </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
