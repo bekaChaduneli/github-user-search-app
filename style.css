@@ -20,6 +20,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
@@ -30,6 +31,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow-x: hidden;
 }
 
 .hidden {
@@ -43,6 +45,7 @@ header {
     align-items: center;
     margin-top: 31px;
     height: 38px;
+    overflow: hidden;
 }
 
 .logo {
@@ -85,6 +88,7 @@ header {
     gap: 7px;
     border-radius:15px;
     box-shadow: var(--shadow);
+    overflow: hidden;
 }
 .search-content {
     display: flex;
