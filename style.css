@@ -180,6 +180,8 @@ header {
     font-weight:700;
     color:var(--black-text);
     width:300px;
+    position: absolute;
+    margin-top: -25px;
 }
 
 .user-text-hashtag {
@@ -355,6 +357,7 @@ header {
     .user-text-headline {
         font-size:26px;
         line-height:38.5px;
+        margin-top: -35px;
     }
     .user-text-hashtag {
         font-size:16px;
@@ -414,7 +417,8 @@ header {
     }
 
     .user-text-date {
-        transform:translate(305px,-60px);
+        transform:translate(305px,-27px);
+        position: absolute;
     }
     .content-conteiner-text-box {
         width:480px;
