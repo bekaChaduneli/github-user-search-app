@@ -246,6 +246,7 @@ header {
 }
 
 .location,.github,.company,.twitter {
+    overflow: hidden;
     display: flex;
     gap:19.25px;
 }
@@ -255,6 +256,7 @@ header {
     font-size: 13px;
     line-height:19.25px;
     text-decoration: none;
+    overflow: hidden;
 }
 
 .not-availible {
