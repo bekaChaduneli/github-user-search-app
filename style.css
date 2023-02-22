@@ -172,6 +172,7 @@ header {
     width:144px;
     display:flex;
     flex-direction:column;
+    margin-top: 20px;
 }
 
 .user-text-headline {
