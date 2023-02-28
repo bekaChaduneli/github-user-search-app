@@ -15,8 +15,8 @@
 
 ### Links
 
-- Live Site URL: [GitHub](https://bekaChaduneli.github.io/github-user-search-app)
-- Solution URL: [Live URL](https://github.com/bekaChaduneli/github-user-search-app)
+- Live Site URL: [Live URL](https://bekaChaduneli.github.io/github-user-search-app)
+- Solution URL: [GitHub](https://github.com/bekaChaduneli/github-user-search-app)
 
 ## My process
 
